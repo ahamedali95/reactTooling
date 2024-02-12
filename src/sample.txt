@@ -1,0 +1,16 @@
+1. User submit the form
+2. Show the dialog for confirmation
+    a. Dialog title
+    b. Dialog body
+    c. Dialog actions - YES, NO
+3. Upon clicking yes,
+    a. make the request
+    b. show the overlay
+    c. once response is complete,
+        i. success - show a success dialog along with a description of the changes.
+        ii. failure
+            a. show a failure dialog along with a description of the changes.
+            b. Allow user to retry
+            c. Allow user to close the dialog
+4. Upon clicking no,
+    a. close the dialog
