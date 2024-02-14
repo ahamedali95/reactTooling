@@ -9,7 +9,7 @@
     ],
     "experimentalDecorators": true,
     "module": "NodeNext",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "Node",
     "baseUrl": "./src",
     "resolveJsonModule": true,
     "allowJs": false,

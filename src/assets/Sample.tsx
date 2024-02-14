@@ -1,13 +1,15 @@
 import React, { type FC } from "react";
-import { Sample } from 'Assets';
-import { img } from 'Components';
+// import img from './assets/img';
 
 type NavigationBarProps = {
     isIndex: boolean;
 }
-const NavigationBar: FC<NavigationBarProps> = ({ isIndex }) => {
+const Sample: FC<NavigationBarProps> = ({ isIndex }) => {
     // TODO: Actually implement a navigation bar
     const foo = 2
+    const str1 = 'Br';
+
+    console.log(str1.padEnd(5, '.'));
     const data = { name: { firstName: 'ddd' }}
     const { firstName } = data.name;
     return (
@@ -15,13 +17,11 @@ const NavigationBar: FC<NavigationBarProps> = ({ isIndex }) => {
             className="ff"
             id="dd"
         >
-            <img src={img} alt="ff" />
-
+            {/*<img src={img} alt="ff" />*/}
             {
-                foo ? `Hello from React!${2+2}${firstName}` : null
+                foo ? `Hello from Redndndndndnnddnnndddact!${2+2}${firstName}` : null
             }
-            <Sample isIndex />
         </h1>
     );
 }
-export default NavigationBar;
+export default Sample;

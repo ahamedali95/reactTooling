@@ -20,9 +20,6 @@ const commonConfig: Configuration = {
             Utils: srcFolder + '/utils'
         }
     },
-    performance: {
-        hints: 'warning'
-    },
     output: {
         filename: '[name].bundle.js',
         path: buildFolder,
@@ -34,7 +31,7 @@ const commonConfig: Configuration = {
                 .slice(1)
                 .join("/");
 
-            return `${filepath}/[name].[ext]`;
+            return `${filepath}/[name][ext]`;
         }
     },
     module: {
@@ -56,7 +53,7 @@ const commonConfig: Configuration = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: publicFolder + '/index.html'
+            template: srcFolder + '/index.html'
         })
     ]
 };
