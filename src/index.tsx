@@ -3,9 +3,9 @@ import { createRoot } from "react-dom/client";
 
 import add from "Api";
 
-import NavigationBar from "./App";
+import App from "./App";
 
 const domNode = document.getElementById("root") as HTMLElement;
 const root = createRoot(domNode);
-root.render(<NavigationBar isIndex />);
+root.render(<App />);
 console.log(add(100, 1000));

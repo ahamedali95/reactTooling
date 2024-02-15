@@ -1,6 +1,6 @@
 import path from 'path';
 import { defineConfig, mergeConfig } from 'vite';
-import commonConfig from "./vite.config";
+import commonConfig from "./vite.config.mjs";
 import legacyPlugin from "@vitejs/plugin-legacy";
 
 const buildFolder = path.resolve(__dirname, '..', 'build');

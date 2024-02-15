@@ -9,12 +9,12 @@
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
     "test:watch": "jest --watchAll",
     "test": "jest --collectCoverage",
-    "start:vite": "cross-env NODE_ENV=development NODE_OPTIONS='--experimental-loader ts-node/esm' vite serve --config config/vite.dev.ts",
-    "build:dev:vite": "cross-env NODE_ENV=development NODE_OPTIONS='--experimental-loader ts-node/esm' vite build --config config/vite.dev.ts",
-    "build:prod:vite": "cross-env NODE_ENV=development NODE_OPTIONS='--experimental-loader ts-node/esm' vite build --config config/vite.prod.ts",
-    "start": "cross-env NODE_ENV=development NODE_OPTIONS='--experimental-loader ts-node/esm' webpack serve --config ./config/webpack.dev.ts",
-    "build:dev": "cross-env NODE_ENV=development NODE_OPTIONS='--experimental-loader ts-node/esm' webpack --config config/webpack.dev.ts",
-    "build:prod": "cross-env NODE_ENV=production NODE_OPTIONS='--experimental-loader ts-node/esm' webpack --config config/webpack.prod.ts"
+    "start:vite": "cross-env NODE_ENV=development vite serve --config config/vite.dev.mts",
+    "build:dev:vite": "cross-env NODE_ENV=development vite build --config config/vite.dev.mts",
+    "build:prod:vite": "cross-env NODE_ENV=development vite build --config config/vite.prod.mts",
+    "start": "cross-env NODE_ENV=development webpack serve --config ./config/webpack.dev.ts",
+    "build:dev": "cross-env NODE_ENV=development webpack --config config/webpack.dev.ts",
+    "build:prod": "cross-env NODE_ENV=production webpack --config config/webpack.prod.ts"
   },
   "author": "Ahamed Abbas",
   "license": "ISC",

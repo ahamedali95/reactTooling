@@ -1,6 +1,6 @@
 import path from 'path';
 import { defineConfig, mergeConfig, splitVendorChunkPlugin } from 'vite';
-import commonConfig from "./vite.config";
+import commonConfig from "./vite.config.mjs";
 import {createHtmlPlugin} from "vite-plugin-html";
 import legacyPlugin from "@vitejs/plugin-legacy";
 

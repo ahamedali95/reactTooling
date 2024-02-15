@@ -1,4 +1,11 @@
 {
+  "ts-node": {
+    "esm": true,
+    "compilerOptions": {
+      "module": "CommonJS",
+      "moduleResolution": "NodeNext",
+    }
+  },
   "compilerOptions": {
     "target": "ESNext",
     "jsx": "react",
@@ -8,8 +15,8 @@
       "esnext"
     ],
     "experimentalDecorators": true,
-    "module": "NodeNext",
-    "moduleResolution": "Node",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "baseUrl": "./src",
     "resolveJsonModule": true,
     "allowJs": false,

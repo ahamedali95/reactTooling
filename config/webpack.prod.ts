@@ -1,5 +1,5 @@
 import path from 'path';
-import { DefinePlugin, ids } from 'webpack';
+import {DefinePlugin, ids} from 'webpack';
 import type { Configuration } from 'webpack';
 import TerserWebpackPlugin from 'terser-webpack-plugin';
 import HtmlMinimizerPlugin from 'html-minimizer-webpack-plugin';
