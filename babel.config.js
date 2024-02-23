@@ -23,7 +23,7 @@ module.exports = (api) => {
                 alias: {
                     Api: "./src/api",
                     Assets: "./src/assets",
-                    Components: "./src/components",
+                    Common: "./src/common",
                     Hooks: "./src/hooks",
                     Pages: "./src/pages",
                     Utils: "./src/utils"

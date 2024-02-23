@@ -30,7 +30,7 @@
     "paths": {
       "Api": [ "api" ],
       "Assets": [ "assets" ],
-      "Components": [ "components" ],
+      "Common": [ "common" ],
       "Hooks": [ "hooks" ],
       "Pages": [ "pages" ],
       "Utils": [ "utils" ]

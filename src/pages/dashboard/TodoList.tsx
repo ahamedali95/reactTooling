@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useContext} from "react";
 
 import Todo from "./Todo";
+import {DashboardContext} from "./Dashboard";
 
 type TodoType = {
     id: number;
@@ -10,11 +11,12 @@ type TodoType = {
 };
 
 type TodoListProps = {
-    list: TodoType[],
     onComplete: (value: number) => void;
 };
 
-const TodoList: React.FC<TodoListProps> = ({ list, onComplete }) => {
+const TodoList: React.FC<TodoListProps> = ({ onComplete }) => {
+    const list = useContext(DashboardContext);
+    console.log("list in todo list", list)
     return (
         <ol>
             {

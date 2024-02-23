@@ -14,7 +14,7 @@ const commonConfig: Configuration = {
         alias: {
             Api: srcFolder + '/api',
             Assets: srcFolder + '/assets',
-            Components: srcFolder + '/components',
+            Common: srcFolder + '/common',
             Hooks: srcFolder + '/hooks',
             Pages: srcFolder + '/pages',
             Utils: srcFolder + '/utils'
